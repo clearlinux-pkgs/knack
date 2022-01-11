@@ -1,0 +1,10 @@
+0.8.2
+pypi(argcomplete)
+pypi(colorama)
+pypi(flake8)
+pypi(jmespath)
+pypi(mock)
+pypi(pygments)
+pypi(pylint)
+pypi(pyyaml)
+pypi(tabulate)

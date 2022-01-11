@@ -4,7 +4,7 @@
 #
 Name     : knack
 Version  : 0.8.2
-Release  : 19
+Release  : 20
 URL      : https://github.com/microsoft/knack/archive/v0.8.2/knack-0.8.2.tar.gz
 Source0  : https://github.com/microsoft/knack/archive/v0.8.2/knack-0.8.2.tar.gz
 Summary  : A Command-Line Interface framework
@@ -13,28 +13,21 @@ License  : MIT
 Requires: knack-license = %{version}-%{release}
 Requires: knack-python = %{version}-%{release}
 Requires: knack-python3 = %{version}-%{release}
-Requires: PyYAML
-Requires: Pygments
-Requires: argcomplete
-Requires: colorama
-Requires: flake8
-Requires: jmespath
-Requires: pylint
-Requires: python-mock
-BuildRequires : PyYAML
-BuildRequires : Pygments
-BuildRequires : argcomplete
 BuildRequires : buildreq-distutils3
-BuildRequires : colorama
-BuildRequires : flake8
-BuildRequires : jmespath
-BuildRequires : pluggy
-BuildRequires : py-python
-BuildRequires : pylint
-BuildRequires : pytest
-BuildRequires : python-mock
-BuildRequires : tox
-BuildRequires : virtualenv
+BuildRequires : pypi(argcomplete)
+BuildRequires : pypi(colorama)
+BuildRequires : pypi(flake8)
+BuildRequires : pypi(jmespath)
+BuildRequires : pypi(mock)
+BuildRequires : pypi(py)
+BuildRequires : pypi(pygments)
+BuildRequires : pypi(pylint)
+BuildRequires : pypi(pyyaml)
+BuildRequires : pypi(tabulate)
+BuildRequires : pypi-pluggy
+BuildRequires : pypi-pytest
+BuildRequires : pypi-tox
+BuildRequires : pypi-virtualenv
 
 %description
 Knack
@@ -66,8 +59,11 @@ Requires: python3-core
 Provides: pypi(knack)
 Requires: pypi(argcomplete)
 Requires: pypi(colorama)
+Requires: pypi(flake8)
 Requires: pypi(jmespath)
+Requires: pypi(mock)
 Requires: pypi(pygments)
+Requires: pypi(pylint)
 Requires: pypi(pyyaml)
 Requires: pypi(tabulate)
 
@@ -84,7 +80,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1635747101
+export SOURCE_DATE_EPOCH=1641860402
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
