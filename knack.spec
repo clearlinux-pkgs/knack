@@ -7,7 +7,7 @@
 #
 Name     : knack
 Version  : 0.12.0
-Release  : 25
+Release  : 26
 URL      : https://github.com/microsoft/knack/archive/v0.12.0/knack-0.12.0.tar.gz
 Source0  : https://github.com/microsoft/knack/archive/v0.12.0/knack-0.12.0.tar.gz
 Summary  : A Command-Line Interface framework
